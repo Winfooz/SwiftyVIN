@@ -10,6 +10,9 @@
 		C0FA25FA216A341800E0733D /* SwiftyVIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FA25F0216A341800E0733D /* SwiftyVIN.framework */; };
 		C0FA25FF216A341800E0733D /* SwiftyVINTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA25FE216A341800E0733D /* SwiftyVINTests.swift */; };
 		C0FA2601216A341800E0733D /* SwiftyVIN.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FA25F3216A341800E0733D /* SwiftyVIN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0FA260C216A35A800E0733D /* VINConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA260B216A35A800E0733D /* VINConstants.swift */; };
+		C0FA260E216A361700E0733D /* SwiftyVIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA260D216A361700E0733D /* SwiftyVIN.swift */; };
+		C0FA2611216A448D00E0733D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA2610216A448D00E0733D /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		C0FA25F9216A341800E0733D /* SwiftyVINTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyVINTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FA25FE216A341800E0733D /* SwiftyVINTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyVINTests.swift; sourceTree = "<group>"; };
 		C0FA2600216A341800E0733D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0FA260B216A35A800E0733D /* VINConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VINConstants.swift; sourceTree = "<group>"; };
+		C0FA260D216A361700E0733D /* SwiftyVIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyVIN.swift; sourceTree = "<group>"; };
+		C0FA2610216A448D00E0733D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,8 @@
 		C0FA25F2216A341800E0733D /* SwiftyVIN */ = {
 			isa = PBXGroup;
 			children = (
+				C0FA260F216A447F00E0733D /* extension */,
+				C0FA260A216A357500E0733D /* source */,
 				C0FA25F3216A341800E0733D /* SwiftyVIN.h */,
 				C0FA25F4216A341800E0733D /* Info.plist */,
 			);
@@ -84,6 +92,23 @@
 				C0FA2600216A341800E0733D /* Info.plist */,
 			);
 			path = SwiftyVINTests;
+			sourceTree = "<group>";
+		};
+		C0FA260A216A357500E0733D /* source */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA260D216A361700E0733D /* SwiftyVIN.swift */,
+				C0FA260B216A35A800E0733D /* VINConstants.swift */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		C0FA260F216A447F00E0733D /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA2610216A448D00E0733D /* String.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +173,7 @@
 				TargetAttributes = {
 					C0FA25EF216A341800E0733D = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					C0FA25F8216A341800E0733D = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0FA2611216A448D00E0733D /* String.swift in Sources */,
+				C0FA260C216A35A800E0733D /* VINConstants.swift in Sources */,
+				C0FA260E216A361700E0733D /* SwiftyVIN.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +370,7 @@
 		C0FA2605216A341800E0733D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -359,6 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sabah.SwiftyVIN;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,6 +398,7 @@
 		C0FA2606216A341800E0733D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -393,6 +425,7 @@
 		C0FA2608216A341800E0733D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F5VSBGR3Y;
 				INFOPLIST_FILE = SwiftyVINTests/Info.plist;
@@ -411,6 +444,7 @@
 		C0FA2609216A341800E0733D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F5VSBGR3Y;
 				INFOPLIST_FILE = SwiftyVINTests/Info.plist;
