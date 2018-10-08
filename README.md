@@ -59,3 +59,7 @@ Checking valid and invalid VIN with 100% code coverage.
 
 * [VIN.pdf](http://assets.ibc.ca/Documents/Auto%20Insurance/brochure/Understanding-Vehicle-Identification-Numbers.pdf) - VIN document.
 * inspired from [python-libvin](https://github.com/h3/python-libvin)
+
+## Authors
+
+* **Majd Sabah** - *Initial work* - [sbhmajd](https://github.com/sbhmajd)
