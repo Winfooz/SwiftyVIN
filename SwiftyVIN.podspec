@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftyVIN'
-  s.version          = '1.2'
+  s.version          = '1.2.1'
   s.summary          = 'Swift version of VIN validation'
   s.description      = <<-DESC
   Swift version of VIN validation using swift 4.2

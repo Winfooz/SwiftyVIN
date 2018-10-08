@@ -1,4 +1,4 @@
-# SwiftyVIN 1.2
+# SwiftyVIN 1.2.1
 
 A Swift version of VIN validations using Swift 4.2
 
