@@ -77,8 +77,8 @@
 		C0FA25F2216A341800E0733D /* SwiftyVIN */ = {
 			isa = PBXGroup;
 			children = (
-				C0FA260F216A447F00E0733D /* extension */,
-				C0FA260A216A357500E0733D /* source */,
+				C0FA260F216A447F00E0733D /* Extension */,
+				C0FA260A216A357500E0733D /* Source */,
 				C0FA25F3216A341800E0733D /* SwiftyVIN.h */,
 				C0FA25F4216A341800E0733D /* Info.plist */,
 			);
@@ -94,21 +94,21 @@
 			path = SwiftyVINTests;
 			sourceTree = "<group>";
 		};
-		C0FA260A216A357500E0733D /* source */ = {
+		C0FA260A216A357500E0733D /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				C0FA260D216A361700E0733D /* SwiftyVIN.swift */,
 				C0FA260B216A35A800E0733D /* VINConstants.swift */,
 			);
-			path = source;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		C0FA260F216A447F00E0733D /* extension */ = {
+		C0FA260F216A447F00E0733D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				C0FA2610216A448D00E0733D /* String.swift */,
 			);
-			path = extension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
