@@ -1,31 +1,53 @@
-# SwiftyVIN 1.0
+# SwiftyVIN 1.2
 
 A Swift version of VIN validations using Swift 4.2
 
 ## Getting Started
 
+Just after intallation
+
 ```
 import SwiftyVIN
 ```
+
+Create SwiftyVIN object
 
 ```
 let swiftyVin: SwiftyVIN = SwiftyVIN("")
 ```
 
-Then
+Then validate
 
 ```
 swiftyVin.isValid()
 ```
 
-### Installing
+## Debug mode
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+To enable debug mode
 
 ```
-Give the example
+SwiftyVINLogger.shared.debugMode = true
+```
+
+
+### Installing
+
+Add the following inside your podfile
+
+```
+
+use_frameworks!
+
+pod 'SwiftyVIN'
+
+```
+
+Then
+
+```
+pod install
+
 ```
 
 ## Running the tests

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftyVIN'
-  s.version          = '1.1'
+  s.version          = '1.2'
   s.summary          = 'Swift version of VIN validation'
   s.description      = <<-DESC
   Swift version of VIN validation using swift 4.2
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Majd Sabah' => 'sbh.majd@gmail.com' }
   s.source           = { :git => 'https://github.com/sbhmajd/SwiftyVIN.git', :tag => s.version.to_s }
  
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '11.0'
   s.source_files = 'SwiftyVIN/**/*.swift'
  
 end

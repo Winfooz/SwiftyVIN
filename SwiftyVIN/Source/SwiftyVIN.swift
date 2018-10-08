@@ -12,7 +12,7 @@ public struct SwiftyVIN {
     
     private(set) var vinString: String
     
-    init(_ vinString: String) {
+    public init(_ vinString: String) {
         
         self.vinString = vinString.uppercased()
         
@@ -33,11 +33,19 @@ public struct SwiftyVIN {
         
         if !SwiftyVIN.validVINLength(vinString) {
             
+            if SwiftyVINLogger.shared.debugMode {
+               print("InvalidVINLength")
+            }
+            
             return false
             
         }
         
         if !SwiftyVIN.validVINCharacters(vinString) {
+            
+            if SwiftyVINLogger.shared.debugMode {
+                print("InvalidVINCharacters")
+            }
             
             return false
             
@@ -45,17 +53,29 @@ public struct SwiftyVIN {
         
         if !SwiftyVIN.validVINCharacter(vinString, at: VINConstants.tenthCharIndex) {
             
+            if SwiftyVINLogger.shared.debugMode {
+                print("InvalidVINCharacterAtTenthChar")
+            }
+            
             return false
             
         }
         
         if !SwiftyVIN.validVINCheckDigit(vinString) {
             
+            if SwiftyVINLogger.shared.debugMode {
+                print("InvalidVINCheckDigit")
+            }
+            
             return false
             
         }
         
         if !SwiftyVIN.validVINRepeatedCharacters(vinString) {
+            
+            if SwiftyVINLogger.shared.debugMode {
+                print("InvalidVINRepeatedCharacters")
+            }
             
             return false
             

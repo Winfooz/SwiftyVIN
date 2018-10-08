@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0781A8F216B7DEA0018ED49 /* SwiftyVINLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0781A8E216B7DEA0018ED49 /* SwiftyVINLogger.swift */; };
 		C0FA25FA216A341800E0733D /* SwiftyVIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FA25F0216A341800E0733D /* SwiftyVIN.framework */; };
 		C0FA25FF216A341800E0733D /* SwiftyVINTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA25FE216A341800E0733D /* SwiftyVINTests.swift */; };
 		C0FA2601216A341800E0733D /* SwiftyVIN.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FA25F3216A341800E0733D /* SwiftyVIN.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0781A8E216B7DEA0018ED49 /* SwiftyVINLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyVINLogger.swift; sourceTree = "<group>"; };
 		C0FA25F0216A341800E0733D /* SwiftyVIN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyVIN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FA25F3216A341800E0733D /* SwiftyVIN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyVIN.h; sourceTree = "<group>"; };
 		C0FA25F4216A341800E0733D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C0FA260D216A361700E0733D /* SwiftyVIN.swift */,
+				C0781A8E216B7DEA0018ED49 /* SwiftyVINLogger.swift */,
 				C0FA260B216A35A800E0733D /* VINConstants.swift */,
 			);
 			path = Source;
@@ -223,6 +226,7 @@
 				C0FA2611216A448D00E0733D /* String.swift in Sources */,
 				C0FA260C216A35A800E0733D /* VINConstants.swift in Sources */,
 				C0FA260E216A361700E0733D /* SwiftyVIN.swift in Sources */,
+				C0781A8F216B7DEA0018ED49 /* SwiftyVINLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +384,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftyVIN/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,7 +412,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftyVIN/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
