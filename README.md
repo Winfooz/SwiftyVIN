@@ -4,7 +4,7 @@ A Swift version of VIN validations using Swift 4.2
 
 ## Getting Started
 
-Just after intallation
+Just after installation
 
 ```
 import SwiftyVIN
