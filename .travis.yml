@@ -1,5 +1,5 @@
 osx_image: xcode10.1
 language: swift
 script:
-  - xcodebuild
-  - xcodebuild -version
+  - xcodebuild clean build
+  - xcodebuild clean test -scheme SwiftyVIN -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone XR,OS=12.1'
