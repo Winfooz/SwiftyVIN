@@ -103,7 +103,7 @@ public struct SwiftyVIN {
     }
     
     
-    /// The letters I,O, Q are prohibited from any VIN position
+    /// The letters I,O, Q are prohibited from any VIN position, also special characters are prohibited
     ///
     /// - Parameter vinString: vin string
     /// - Returns: a flag 'true' when valid, else returns 'false'
@@ -114,6 +114,12 @@ public struct SwiftyVIN {
             return false
             
         }
+		
+		if vinString.rangeOfCharacter(from: CharacterSet.alphanumerics.inverted) != nil {
+			
+			return false
+			
+		}
         
         return true
         
