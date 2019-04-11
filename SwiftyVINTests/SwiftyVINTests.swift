@@ -36,6 +36,10 @@ class SwiftyVINTests: XCTestCase {
         XCTAssertEqual(SwiftyVIN.validVINCharacters("1FACP45EXLF19294Q"), false, "invaild characters")
         XCTAssertEqual(SwiftyVIN.validVINCharacters("1FACP45EXLF19294I"), false, "invaild characters")
         XCTAssertEqual(SwiftyVIN.validVINCharacters("1FACP45EXLF19294O"), false, "invaild characters")
+		XCTAssertEqual(SwiftyVIN.validVINCharacters("1FA P45EXLF192944"), false, "invaild characters")
+		XCTAssertEqual(SwiftyVIN.validVINCharacters("1FA%P45EXLF192944"), false, "invaild characters")
+		XCTAssertEqual(SwiftyVIN.validVINCharacters("1FA😅P45EXLF192944"), false, "invaild characters")
+		XCTAssertEqual(SwiftyVIN.validVINCharacters("$FA😅P45EXLF192944"), false, "invaild characters")
         
     }
     
